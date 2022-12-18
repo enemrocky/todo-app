@@ -111,3 +111,6 @@ a .bi {
     color: #fff;
 }
 
+#input-group{
+  display: none;
+}
