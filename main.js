@@ -17,3 +17,4 @@ addBtn.addEventListener('click', function(){
 
 })
 
+// put checkmark for line through
