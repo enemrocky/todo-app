@@ -4,107 +4,29 @@
   box-sizing: border-box;
 }
 
-#todo-app {
-  min-height: 600px;
-  position: relative;
-}
-
-/* Task */
-#task {
-  display: flex;
-  justify-content: space-between;
-  border-radius: 1rem;
-  border: rgba(85, 85, 85, 0.3) solid 1px;
-  padding: 0.8rem 1rem;
+.container{
+  margin: 0 auto;
+  background-color: skyblue;
+  padding-bottom: 5rem;
   width: 500px;
-  margin-bottom: 1rem;
-}
-
-#left-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 0.5rem;
-  border-right: rgba(85, 85, 85, 0.3) solid 1px;
-  padding-right: 1rem;
-  margin-right: 1rem;
-}
-
-#left-info .text-muted {
-  margin-bottom: 0;
-}
-
-#tag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2rem;
-  padding: 0.1rem 1rem;
-}
-.tag-green{
-    border: rgb(73, 239, 27) solid 2px;
-}
-
-.tag-red {
-  border: rgb(239, 27, 27) solid 2px;
-}
-
-.tag-yellow {
-  border: rgb(235, 239, 27) solid 2px;
-}
-
-#tag p {
-  font-size: 0.9rem;
-  margin-bottom: 0;
-}
-
-#task-info p {
-  font-size: 1.1rem;
-  margin-right: 1rem;
-}
-
-.task-info-align {
-  width: 100%;
-  justify-content: space-between;
-}
-
-#icons {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  /* margin-left: 4rem; */
-}
-
-#delete i {
-  font-size: 2rem;
-}
-
-#edit i {
-  margin-left: 0.4rem;
-}
-
-#add-task-btn {
-  position: absolute;
-  bottom: 2.5rem;
-  background-color: rgb(73, 239, 27);
-  outline: none;
-  color: #fff;
-  box-sizing: border-box;
-  width: 84%;
-}
-
-a .bi {
-  color: rgba(85, 85, 85);
 }
 
 #add-btn{
-    font-size: 1.4rem;
-    bottom: 2.5rem;
     background-color: rgb(73, 239, 27);
     outline: none;
     color: #fff;
-    padding: .6rem 1rem;
+    padding: .3rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+}
+
+#todoInfo{
+  padding: .3rem 1rem;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 1rem;
+
 }
 
 #add-btn i{  
@@ -112,5 +34,5 @@ a .bi {
 }
 
 #input-group{
-  display: none;
+  display:flex;
 }

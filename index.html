@@ -17,49 +17,15 @@
     <title>TODO</title>
   </head>
   <body>
-    <section
-      class="bg-light d-flex align-items-center justify-content-center py-5"
-    >
-      <div id="todo-app" class="bg-white d-flex flex-column py-4 px-5 rounded">
-        <h2 class="text-center mb-4 fw-bolder">TODO</h2>
-        <!-- <div id="task" class="d-flex align-items-center">
-          <div id="left-info">
-            <div id="tag" class="tag-green">
-              <p class="text-muted">FAMILY</p>
-            </div>
-            <p class="text-muted">7 Apr</p>
-          </div>
-          <div class="task-info-align d-flex">
-            <div id="task-info">
-              <p id="message">Finish JS project</p>
-            </div>
-            <div id="icons">
-              <button id="delete">
-                <a href="">
-                  <i class="bi bi-x"></i>
-                </a>
-              </button>
-              <div id="edit">
-                <a href="">
-                  <i class="bi bi-pencil"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div id="input-group" class="row w-100 pe-3 gx-1"> -->
-          
-            <input id="input" type="text" class="form-control rounded p-2" />
-          
-          
-            <a id="add-btn" href="#" class="btn fw-bolder">
-              <i class="bi bi-plus-lg"></i>
-            </a>
-          </div>
-        <!-- </div> -->
-        <button id="add-task-btn" class="btn fw-bolder">ADD TASK</button>
+  
+    <div class="container">
+      <h2>My ToDo List</h2>
+      <div class="input-group">
+        <input type="text" name="todo" id="todoInfo">
+        <button id="add-btn">Add</button>
       </div>
-    </section>
+      <div id="todolist"></div>
+    </div>
 
     <script src="main.js"></script>
     <script
