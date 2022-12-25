@@ -4,15 +4,25 @@
   box-sizing: border-box;
 }
 
-.container{
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  background-color: skyblue;
-  padding-bottom: 5rem;
-  width: 500px;
+  padding: 3rem;
+  background-color: rgb(166, 220, 241);
+  border-radius: 1rem;
 }
 
 #add-btn{
-    background-color: rgb(73, 239, 27);
+    background-color: rgb(11, 221, 106);
     outline: none;
     color: #fff;
     padding: .3rem 1rem;
@@ -26,13 +36,18 @@
   outline: none;
   border: 1px solid #999;
   border-radius: 1rem;
+}
 
+#todolist{
+  margin-top: 1rem;
 }
 
 #add-btn i{  
     color: #fff;
 }
 
-#input-group{
-  display:flex;
+#list-item{
+  margin: 0 ;
+  padding: 0;
+  font-size: 1.2rem;
 }

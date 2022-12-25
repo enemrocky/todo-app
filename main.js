@@ -1,17 +1,24 @@
 const input = document.querySelector('#todoInfo');
 const addBtn = document.querySelector('#add-btn');
-const listContainer = document.querySelector('#todoList');
+const listContainer = document.querySelector('#todolist');
+
+listContainer.style.width = '100%';
+listContainer.style.padding = '0 auto';
 
 addBtn.addEventListener('click', function(){
     const listItem = document.createElement('p');
-    listItem.innerHTML = `<div class="d-flex justify-content-between">${input.value}  <i class="bi bi-trash ms-5"></i></div>`;
+    // listContainer.innerHTML = `<div class="d-flex justify-content-between"></div>`
+    listItem.innerHTML = `${input.value}`;
+    if(input.value === ''){
+        listItem.innerHTML.remove();
+    }
     listContainer.append(listItem);
     input.value = '';
-    const deleteBtn = document.querySelector('.delete')
+    
     listItem.addEventListener('click', function(){
         listItem.style.textDecoration = 'line-through';
     })
-    deleteBtn.addEventListener('click', function(){
+    listItem.addEventListener('dblclick', function(){
         listItem.remove();
     })
 
