@@ -1,8 +1,10 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
 }
 
 #card{
@@ -15,6 +17,11 @@ body{
   border-radius: 1rem;
 }
 
+#input-group{
+  display: flex;
+  margin:  auto 0;
+}
+
 #add-btn{
     background-color: rgb(11, 221, 106);
     outline: none;
@@ -23,6 +30,7 @@ body{
     border: none;
     border-radius: 1rem;
     box-shadow: 3px 3px 5px rgba(0,0,0,.3);
+    height: 100%;
 }
 
 #todoInfo{
@@ -31,4 +39,16 @@ body{
   outline: none;
   border: 1px solid #999;
   border-radius: 1rem;
+}
+
+.key{
+  margin-top: 1rem;
+}
+
+.key p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #999;
 }
